@@ -10,12 +10,15 @@ e o de Tipos, onde o atributo é o nome do tipo de dado que foi utilizado.
 Para execução deve-se ter o lex instalado (Ubuntu):
 
 sudo apt-get update
+
 sudo apt-get install flex
 
 Após isso, na pasta dos arquivos, abra um terminal e execute:
 
 lex lex.l
+
 gcc lex.yy.c
+
 ./a.out
 
 Caso queira alterar o codigo fonte, deve-se alterar o arquivo "teste.txt".
