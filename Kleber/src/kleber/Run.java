@@ -38,6 +38,7 @@ public class Run {
         frame.add(panel);
         frame.setSize(1000, 600);
         frame.setState(JFrame.MAXIMIZED_HORIZ);
+        frame.setResizable(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }

@@ -4,27 +4,32 @@ grammar Kleber;
 package kleber.parser;
 }
 
-progr             : (bibcall)+ global? main 
+progr             : (bibcall)+ global? functions? main 
                   ;
 bibcall		  : INCLUDE STR
 		  ;
-global		  : GLOBAL OBL (variavel EOL)+ CBL
+global		  : GLOBAL OBL (variable EOL)+ CBL
 		  ;
+functions         : FUNCTIONS OBL (function EOL)+ CBL
+                  ;
+function          : type VAR OEX ((variable SEP)* variable)? CEX functionBlock 
+                  ;
 main     	  : MAIN block
 		  ;
 line              : read          
                   | write         
                   | atr           
-                  | ifstm         
+                  | ifstm
                   ;
 read              : READ VAR
                   ;
 write             : WRITE STR     
                   | WRITE expr    
                   ;
-variavel          : tipo VAR
+variable          : type VAR
+                  | type VAR (SEP VAR)*
 	          ;
-tipo	          : INT
+type	          : INT
 	          | FLOAT
 	          | BOOLEAN
 	          | STRING
@@ -67,7 +72,11 @@ increment	  : PEG
 		  ;
 block             : OBL (line EOL)+ CBL
                   ;
+functionBlock     : OBL (line EOL)+ RETURN fact EOL CBL
+                  ;
 
+RETURN      : 'return';
+FUNCTIONS   : 'functions';
 INT         : 'int';
 FLOAT       : 'float';
 BOOLEAN     : 'boolean';
@@ -102,6 +111,7 @@ ADD         : '+';
 SUB         : '-';
 MUL         : '*';
 DIV         : '/';
+SEP         : ',';
 MOD         : '%';
 EOL         : ';';
 COMMENT     : '/*' .*? '*/' -> skip;

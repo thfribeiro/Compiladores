@@ -1,13 +1,26 @@
 #include "teste.will"
 
 global{
-int x;
-float y;
+int x,y;
+float z;
+}
+
+functions{
+
+int teste (int x, int y){
+x=x+y;
+return x;
+};
+
+float teste2 (float z){
+return z * 2;
+};
+
 }
 
 main{
 
 x = 10;
-y = 20.5;
+z = 20.5;
 
 }
