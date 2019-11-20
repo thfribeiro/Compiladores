@@ -45,8 +45,8 @@
                 importdir   = "${antlr.generator.import.dir}"
                 destdir     = "${antlr.generator.dest.dir}"
                 library     = "${antlr.generator.jar}"
-                listener    = "${antlr.generator.option.code.listener}"
-                visitor     = "${antlr.generator.option.code.visitor}"
+                listener    = "true"
+                visitor     = "true"
                 codePackage = "${antlr.generator.option.code.package}"
                 atn         = "${antlr.generator.option.atn}">
         </antlr4>

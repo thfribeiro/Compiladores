@@ -6,9 +6,8 @@ float z;
 }
 
 functions{
-
 int teste (int x, int y){
-x=x+y;
+x = x + y;
 return x;
 };
 
@@ -20,7 +19,13 @@ return z * 2;
 
 main{
 
-x = 10;
-z = 20.5;
+printf("Digite um valor:");
+scanf("%d", &x);
+printf("Digite outro valor:");
+scanf("%d", &y);
+
+z = x + y;
+
+printf("Resultado da soma dos dois valores: %d", z);
 
 }

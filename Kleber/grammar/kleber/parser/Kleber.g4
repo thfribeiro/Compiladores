@@ -16,15 +16,15 @@ function          : type VAR OEX ((variable SEP)* variable)? CEX functionBlock
                   ;
 main     	  : MAIN block
 		  ;
-line              : read          
-                  | write         
+line              : printf     
+                  | scanf         
                   | atr           
                   | ifstm
+                  | ret
                   ;
-read              : READ VAR
+printf            : PRINTF OEX STR (SEP(VAR SEP)* VAR)? CEX
                   ;
-write             : WRITE STR     
-                  | WRITE expr    
+scanf             : SCANF OEX STR SEP(('&' VAR SEP)* '&' VAR)+ CEX
                   ;
 variable          : type VAR
                   | type VAR (SEP VAR)*
@@ -72,10 +72,15 @@ increment	  : PEG
 		  ;
 block             : OBL (line EOL)+ CBL
                   ;
-functionBlock     : OBL (line EOL)+ RETURN fact EOL CBL
+ret               : RETURN expr EOL
+                  ;
+functionBlock     : OBL (line EOL)* (ret)? CBL
                   ;
 
+
 RETURN      : 'return';
+PRINTF      : 'printf';
+SCANF       : 'scanf';
 FUNCTIONS   : 'functions';
 INT         : 'int';
 FLOAT       : 'float';
@@ -87,6 +92,7 @@ READ        : 'read';
 WRITE       : 'write';
 IF          : 'if';
 ELSE        : 'else';
+FOR         : 'for';
 MAIN	    : 'main';
 INCLUDE	    : '#include';
 GLOBAL	    : 'global';
@@ -114,6 +120,5 @@ DIV         : '/';
 SEP         : ',';
 MOD         : '%';
 EOL         : ';';
-COMMENT     : '/*' .*? '*/' -> skip;
-LINE_COMMENT: '//' ~[\r\n]* -> skip;
 WS          : [ \t\r\n]+ -> skip;
+

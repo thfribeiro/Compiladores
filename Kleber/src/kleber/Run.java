@@ -3,17 +3,14 @@ package kleber;
 import kleber.parser.*;
 import java.awt.HeadlessException;
 import java.util.Arrays;
-import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.BufferedTokenStream;
 import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
-import java.io.File;
 
 public class Run {
 
@@ -24,6 +21,10 @@ public class Run {
         TokenStream tokens = new BufferedTokenStream(lexer);
         KleberParser parser = new KleberParser(tokens);
         KleberParser.ProgrContext progr = parser.progr();
+        
+        Listener listener = new Listener();
+        
+        
         showParseTreeFrame(progr, parser);
 
     }
@@ -33,12 +34,11 @@ public class Run {
         JPanel panel = new JPanel();
         TreeViewer viewr = new TreeViewer(Arrays.asList(
                 parser.getRuleNames()), tree);
-        viewr.setScale(3);
+        viewr.setScale(1);
         panel.add(viewr);
         frame.add(panel);
         frame.setSize(1000, 600);
         frame.setState(JFrame.MAXIMIZED_HORIZ);
-        frame.setResizable(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
