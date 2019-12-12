@@ -17,48 +17,53 @@ function          : type VAR OEX ((variable SEP)* variable)? CEX functionBlock
 main     	  : MAIN block
 		  ;
 line              : printf     
-                  | scanf         
+                  | scanf
+                  | variable
                   | atr           
                   | ifstm
+                  | forstm
                   | ret
                   ;
-printf            : PRINTF OEX STR (SEP(VAR SEP)* VAR)? CEX
+printf            : PRINTF OEX printparam CEX
                   ;
-scanf             : SCANF OEX STR SEP(('&' VAR SEP)* '&' VAR)+ CEX
+printparam        : STR #printSTR
+                  | VAR #printVAR
+                  | expr #prinExpr
                   ;
-variable          : type VAR
-                  | type VAR (SEP VAR)*
+scanf             : SCANF OEX VAR CEX
+                  ;
+variable          : type VAR (SEP VAR)*
 	          ;
-type	          : INT
+type	          : INT 
 	          | FLOAT
-	          | BOOLEAN
-	          | STRING
+                  | CHAR
+	          | STRING 
 	          ;
-atr               : VAR ATR expr
+atr               : VAR ATR expr #atrExpr
+                  | VAR ATR STR #atrString
+                  | VAR ATR CHARACTERE #atrChar
                   ;
-ifstm             : IF OEX boolExpr CEX block 
-                  | IF OEX boolExpr CEX block ELSE block
+ifstm             : IF OEX boolExpr CEX block #ift
+                  | IF OEX boolExpr CEX block ELSE block #ifelset
                   ;
-forstm	          : FOR CEX atr EOL boolExpr EOL increment CEX block
+forstm	          : FOR OEX atr EOL boolExpr EOL VAR increment NUM CEX block #for
 	          ;
-expr              : term ADD expr 
-                  | term SUB expr
-		  | term
+expr              : term ADD expr               #exprPlus
+                  | term SUB expr               #exprSub
+		  | term                        #exprTerm
                   ;
-term              : fact MUL term 
-                  | fact DIV term 
-                  | fact MOD term
-		  | fact
+term              : fact MUL term               #exprMult
+                  | fact DIV term               #exprDiv
+                  | fact MOD term               #exprMod
+		  | fact                        #exprFact
                   ;
-fact              : VAR 
-                  | NUM 
-                  | OEX expr CEX 
+fact              : VAR  #factVAR
+                  | NUM  #factNUM
+                  | OEX expr CEX #factExpr
                   ;
-boolExpr          : fact 
-                  | NOT boolExpr 
-                  | fact relop fact 
-                  | TRUE 
-                  | FALSE
+boolExpr          : fact relop fact #exprBool
+                  | TRUE #exprTrue
+                  | FALSE #exprFalse
                   ;
 relop             : GR
                   | LS
@@ -72,7 +77,7 @@ increment	  : PEG
 		  ;
 block             : OBL (line EOL)+ CBL
                   ;
-ret               : RETURN expr EOL
+ret               : RETURN '0' #return0
                   ;
 functionBlock     : OBL (line EOL)* (ret)? CBL
                   ;
@@ -84,8 +89,8 @@ SCANF       : 'scanf';
 FUNCTIONS   : 'functions';
 INT         : 'int';
 FLOAT       : 'float';
-BOOLEAN     : 'boolean';
 STRING      : 'string';
+CHAR        : 'char';
 TRUE        : 'true';
 FALSE       : 'false';
 READ        : 'read';
@@ -97,15 +102,17 @@ MAIN	    : 'main';
 INCLUDE	    : '#include';
 GLOBAL	    : 'global';
 STR         : '"'(~["\\\r\n])*'"';
-NUM         : [+-]?[0-9]+('.'[0-9]+)?;
+NUM         : [+¬]?[0-9]+('.'[0-9]+)?;
 VAR         : [a-zA-Z][a-zA-Z0-9_]*;
+CHARACTERE  : '\''[a-zA-Z]'\'';
 GR          : '>'; 
-LS          : '<'; 
+LS          : '<';
 EQ          : '=='; 
 GRT         : '>=';
 LST         : '<='; 
 NEQ         : '!=';
 ATR         : '=';
+ASP         : '"';
 PEG	    : '+=';
 MEG	    : '-=';
 OEX         : '(';

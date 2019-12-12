@@ -1,4 +1,4 @@
-// Generated from C:\Users\Thiago\Documents\NetBeansProjects\Compiladores\Kleber\grammar\kleber\parser\Kleber.g4 by ANTLR 4.6
+// Generated from /home/thiago/Área de Trabalho/Compiladores/Kleber/grammar/kleber/parser/Kleber.g4 by ANTLR 4.6
 
 package kleber.parser;
 
@@ -61,6 +61,27 @@ public interface KleberVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPrintf(KleberParser.PrintfContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code printSTR}
+	 * labeled alternative in {@link KleberParser#printparam}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrintSTR(KleberParser.PrintSTRContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code printVAR}
+	 * labeled alternative in {@link KleberParser#printparam}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrintVAR(KleberParser.PrintVARContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code prinExpr}
+	 * labeled alternative in {@link KleberParser#printparam}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrinExpr(KleberParser.PrinExprContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link KleberParser#scanf}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -79,47 +100,138 @@ public interface KleberVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitType(KleberParser.TypeContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link KleberParser#atr}.
+	 * Visit a parse tree produced by the {@code atrExpr}
+	 * labeled alternative in {@link KleberParser#atr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitAtr(KleberParser.AtrContext ctx);
+	T visitAtrExpr(KleberParser.AtrExprContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link KleberParser#ifstm}.
+	 * Visit a parse tree produced by the {@code atrString}
+	 * labeled alternative in {@link KleberParser#atr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitIfstm(KleberParser.IfstmContext ctx);
+	T visitAtrString(KleberParser.AtrStringContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link KleberParser#forstm}.
+	 * Visit a parse tree produced by the {@code atrChar}
+	 * labeled alternative in {@link KleberParser#atr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitForstm(KleberParser.ForstmContext ctx);
+	T visitAtrChar(KleberParser.AtrCharContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link KleberParser#expr}.
+	 * Visit a parse tree produced by the {@code ift}
+	 * labeled alternative in {@link KleberParser#ifstm}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExpr(KleberParser.ExprContext ctx);
+	T visitIft(KleberParser.IftContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link KleberParser#term}.
+	 * Visit a parse tree produced by the {@code ifelset}
+	 * labeled alternative in {@link KleberParser#ifstm}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitTerm(KleberParser.TermContext ctx);
+	T visitIfelset(KleberParser.IfelsetContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link KleberParser#fact}.
+	 * Visit a parse tree produced by the {@code for}
+	 * labeled alternative in {@link KleberParser#forstm}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFact(KleberParser.FactContext ctx);
+	T visitFor(KleberParser.ForContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link KleberParser#boolExpr}.
+	 * Visit a parse tree produced by the {@code exprPlus}
+	 * labeled alternative in {@link KleberParser#expr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBoolExpr(KleberParser.BoolExprContext ctx);
+	T visitExprPlus(KleberParser.ExprPlusContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprSub}
+	 * labeled alternative in {@link KleberParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprSub(KleberParser.ExprSubContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprTerm}
+	 * labeled alternative in {@link KleberParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprTerm(KleberParser.ExprTermContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprMult}
+	 * labeled alternative in {@link KleberParser#term}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprMult(KleberParser.ExprMultContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprDiv}
+	 * labeled alternative in {@link KleberParser#term}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprDiv(KleberParser.ExprDivContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprMod}
+	 * labeled alternative in {@link KleberParser#term}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprMod(KleberParser.ExprModContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprFact}
+	 * labeled alternative in {@link KleberParser#term}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprFact(KleberParser.ExprFactContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code factVAR}
+	 * labeled alternative in {@link KleberParser#fact}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFactVAR(KleberParser.FactVARContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code factNUM}
+	 * labeled alternative in {@link KleberParser#fact}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFactNUM(KleberParser.FactNUMContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code factExpr}
+	 * labeled alternative in {@link KleberParser#fact}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFactExpr(KleberParser.FactExprContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprBool}
+	 * labeled alternative in {@link KleberParser#boolExpr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprBool(KleberParser.ExprBoolContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprTrue}
+	 * labeled alternative in {@link KleberParser#boolExpr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprTrue(KleberParser.ExprTrueContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprFalse}
+	 * labeled alternative in {@link KleberParser#boolExpr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprFalse(KleberParser.ExprFalseContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link KleberParser#relop}.
 	 * @param ctx the parse tree
@@ -139,11 +251,12 @@ public interface KleberVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBlock(KleberParser.BlockContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link KleberParser#ret}.
+	 * Visit a parse tree produced by the {@code return0}
+	 * labeled alternative in {@link KleberParser#ret}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitRet(KleberParser.RetContext ctx);
+	T visitReturn0(KleberParser.Return0Context ctx);
 	/**
 	 * Visit a parse tree produced by {@link KleberParser#functionBlock}.
 	 * @param ctx the parse tree

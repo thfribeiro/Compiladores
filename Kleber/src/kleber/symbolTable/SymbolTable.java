@@ -8,7 +8,8 @@ public class SymbolTable {
     private static SymbolTable uniqueInstance;
     private ArrayList<Symbol> symbols;
 
-    private SymbolTable() {
+    public SymbolTable() {
+        symbols = new ArrayList<Symbol>();
 
     }
 

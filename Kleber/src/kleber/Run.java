@@ -5,6 +5,7 @@ import java.awt.HeadlessException;
 import java.util.Arrays;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import kleber.symbolTable.SymbolTable;
 import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.BufferedTokenStream;
@@ -20,13 +21,26 @@ public class Run {
         KleberLexer lexer = new KleberLexer(input);
         TokenStream tokens = new BufferedTokenStream(lexer);
         KleberParser parser = new KleberParser(tokens);
-        KleberParser.ProgrContext progr = parser.progr();
-        
-        Listener listener = new Listener();
-        
-        
-        showParseTreeFrame(progr, parser);
+        //KleberParser.ProgrContext progr = parser.progr();
+        SymbolTable symbolTable = SymbolTable.getInstance();
+        ParseTree tree = parser.progr();
 
+
+        Visitor visitor = new Visitor();
+        
+        visitor.visit(tree);
+
+        for (int i = 0; i < symbolTable.size(); i++) {
+            System.out.println(
+                    "ID: " + symbolTable.get(i).getId()+ 
+                    " Nome: " + symbolTable.get(i).getNome()+
+                    " Tipo: " + symbolTable.get(i).getTipo() + 
+                    " Valor: " + symbolTable.get(i).getValor() +
+                    " Escopo: " + symbolTable.get(i).getEscopo()
+            );
+        }
+
+        //showParseTreeFrame(progr, parser);
     }
 
     private static void showParseTreeFrame(ParseTree tree, KleberParser parser) throws HeadlessException {

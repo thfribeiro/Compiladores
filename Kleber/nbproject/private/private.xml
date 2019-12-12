@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Thiago/Documents/NetBeansProjects/Compiladores/Kleber/src/kleber/Listener.java</file>
-            <file>file:/C:/Users/Thiago/Documents/NetBeansProjects/Compiladores/Kleber/build/generated-sources/antlr4/kleber/parser/KleberListener.java</file>
-            <file>file:/C:/Users/Thiago/Documents/NetBeansProjects/Compiladores/Kleber/src/kleber/Run.java</file>
+            <file>file:/home/thiago/Área%20de%20Trabalho/Compiladores/Kleber/src/kleber/Run.java</file>
+            <file>file:/home/thiago/Área%20de%20Trabalho/Compiladores/Kleber/src/kleber/Visitor.java</file>
+            <file>file:/home/thiago/Área%20de%20Trabalho/Compiladores/Kleber/grammar/kleber/parser/Kleber.g4</file>
+            <file>file:/home/thiago/Área%20de%20Trabalho/Compiladores/Kleber/build/generated-sources/antlr4/kleber/parser/KleberBaseVisitor.java</file>
+            <file>file:/home/thiago/Área%20de%20Trabalho/Compiladores/Kleber/teste.kleber</file>
         </group>
     </open-files>
 </project-private>

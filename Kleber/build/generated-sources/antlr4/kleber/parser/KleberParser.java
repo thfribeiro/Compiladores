@@ -1,4 +1,4 @@
-// Generated from C:\Users\Thiago\Documents\NetBeansProjects\Compiladores\Kleber\grammar\kleber\parser\Kleber.g4 by ANTLR 4.6
+// Generated from /home/thiago/Área de Trabalho/Compiladores/Kleber/grammar/kleber/parser/Kleber.g4 by ANTLR 4.6
 
 package kleber.parser;
 
@@ -19,38 +19,41 @@ public class KleberParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, RETURN=2, PRINTF=3, SCANF=4, FUNCTIONS=5, INT=6, FLOAT=7, BOOLEAN=8, 
-		STRING=9, TRUE=10, FALSE=11, READ=12, WRITE=13, IF=14, ELSE=15, FOR=16, 
-		MAIN=17, INCLUDE=18, GLOBAL=19, STR=20, NUM=21, VAR=22, GR=23, LS=24, 
-		EQ=25, GRT=26, LST=27, NEQ=28, ATR=29, PEG=30, MEG=31, OEX=32, CEX=33, 
-		OBL=34, CBL=35, NOT=36, ADD=37, SUB=38, MUL=39, DIV=40, SEP=41, MOD=42, 
-		EOL=43, WS=44;
+		T__0=1, RETURN=2, PRINTF=3, SCANF=4, FUNCTIONS=5, INT=6, FLOAT=7, STRING=8, 
+		CHAR=9, TRUE=10, FALSE=11, READ=12, WRITE=13, IF=14, ELSE=15, FOR=16, 
+		MAIN=17, INCLUDE=18, GLOBAL=19, STR=20, NUM=21, VAR=22, CHARACTERE=23, 
+		GR=24, LS=25, EQ=26, GRT=27, LST=28, NEQ=29, ATR=30, ASP=31, PEG=32, MEG=33, 
+		OEX=34, CEX=35, OBL=36, CBL=37, NOT=38, ADD=39, SUB=40, MUL=41, DIV=42, 
+		SEP=43, MOD=44, EOL=45, WS=46;
 	public static final int
 		RULE_progr = 0, RULE_bibcall = 1, RULE_global = 2, RULE_functions = 3, 
-		RULE_function = 4, RULE_main = 5, RULE_line = 6, RULE_printf = 7, RULE_scanf = 8, 
-		RULE_variable = 9, RULE_type = 10, RULE_atr = 11, RULE_ifstm = 12, RULE_forstm = 13, 
-		RULE_expr = 14, RULE_term = 15, RULE_fact = 16, RULE_boolExpr = 17, RULE_relop = 18, 
-		RULE_increment = 19, RULE_block = 20, RULE_ret = 21, RULE_functionBlock = 22;
+		RULE_function = 4, RULE_main = 5, RULE_line = 6, RULE_printf = 7, RULE_printparam = 8, 
+		RULE_scanf = 9, RULE_variable = 10, RULE_type = 11, RULE_atr = 12, RULE_ifstm = 13, 
+		RULE_forstm = 14, RULE_expr = 15, RULE_term = 16, RULE_fact = 17, RULE_boolExpr = 18, 
+		RULE_relop = 19, RULE_increment = 20, RULE_block = 21, RULE_ret = 22, 
+		RULE_functionBlock = 23;
 	public static final String[] ruleNames = {
 		"progr", "bibcall", "global", "functions", "function", "main", "line", 
-		"printf", "scanf", "variable", "type", "atr", "ifstm", "forstm", "expr", 
-		"term", "fact", "boolExpr", "relop", "increment", "block", "ret", "functionBlock"
+		"printf", "printparam", "scanf", "variable", "type", "atr", "ifstm", "forstm", 
+		"expr", "term", "fact", "boolExpr", "relop", "increment", "block", "ret", 
+		"functionBlock"
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "'&'", "'return'", "'printf'", "'scanf'", "'functions'", "'int'", 
-		"'float'", "'boolean'", "'string'", "'true'", "'false'", "'read'", "'write'", 
+		null, "'0'", "'return'", "'printf'", "'scanf'", "'functions'", "'int'", 
+		"'float'", "'string'", "'char'", "'true'", "'false'", "'read'", "'write'", 
 		"'if'", "'else'", "'for'", "'main'", "'#include'", "'global'", null, null, 
-		null, "'>'", "'<'", "'=='", "'>='", "'<='", "'!='", "'='", "'+='", "'-='", 
-		"'('", "')'", "'{'", "'}'", null, "'+'", "'-'", "'*'", "'/'", "','", "'%'", 
-		"';'"
+		null, null, "'>'", "'<'", "'=='", "'>='", "'<='", "'!='", "'='", "'\"'", 
+		"'+='", "'-='", "'('", "')'", "'{'", "'}'", null, "'+'", "'-'", "'*'", 
+		"'/'", "','", "'%'", "';'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, null, "RETURN", "PRINTF", "SCANF", "FUNCTIONS", "INT", "FLOAT", 
-		"BOOLEAN", "STRING", "TRUE", "FALSE", "READ", "WRITE", "IF", "ELSE", "FOR", 
-		"MAIN", "INCLUDE", "GLOBAL", "STR", "NUM", "VAR", "GR", "LS", "EQ", "GRT", 
-		"LST", "NEQ", "ATR", "PEG", "MEG", "OEX", "CEX", "OBL", "CBL", "NOT", 
-		"ADD", "SUB", "MUL", "DIV", "SEP", "MOD", "EOL", "WS"
+		"STRING", "CHAR", "TRUE", "FALSE", "READ", "WRITE", "IF", "ELSE", "FOR", 
+		"MAIN", "INCLUDE", "GLOBAL", "STR", "NUM", "VAR", "CHARACTERE", "GR", 
+		"LS", "EQ", "GRT", "LST", "NEQ", "ATR", "ASP", "PEG", "MEG", "OEX", "CEX", 
+		"OBL", "CBL", "NOT", "ADD", "SUB", "MUL", "DIV", "SEP", "MOD", "EOL", 
+		"WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -143,41 +146,41 @@ public class KleberParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(47); 
+			setState(49); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(46);
+				setState(48);
 				bibcall();
 				}
 				}
-				setState(49); 
+				setState(51); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==INCLUDE );
-			setState(52);
+			setState(54);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==GLOBAL) {
 				{
-				setState(51);
+				setState(53);
 				global();
 				}
 			}
 
-			setState(55);
+			setState(57);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==FUNCTIONS) {
 				{
-				setState(54);
+				setState(56);
 				functions();
 				}
 			}
 
-			setState(57);
+			setState(59);
 			main();
 			}
 		}
@@ -220,9 +223,9 @@ public class KleberParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(59);
+			setState(61);
 			match(INCLUDE);
-			setState(60);
+			setState(62);
 			match(STR);
 			}
 		}
@@ -277,27 +280,27 @@ public class KleberParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(62);
+			setState(64);
 			match(GLOBAL);
-			setState(63);
+			setState(65);
 			match(OBL);
-			setState(67); 
+			setState(69); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(64);
+				setState(66);
 				variable();
-				setState(65);
+				setState(67);
 				match(EOL);
 				}
 				}
-				setState(69); 
+				setState(71); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INT) | (1L << FLOAT) | (1L << BOOLEAN) | (1L << STRING))) != 0) );
-			setState(71);
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INT) | (1L << FLOAT) | (1L << STRING) | (1L << CHAR))) != 0) );
+			setState(73);
 			match(CBL);
 			}
 		}
@@ -352,27 +355,27 @@ public class KleberParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(73);
+			setState(75);
 			match(FUNCTIONS);
-			setState(74);
+			setState(76);
 			match(OBL);
-			setState(78); 
+			setState(80); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(75);
+				setState(77);
 				function();
-				setState(76);
+				setState(78);
 				match(EOL);
 				}
 				}
-				setState(80); 
+				setState(82); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INT) | (1L << FLOAT) | (1L << BOOLEAN) | (1L << STRING))) != 0) );
-			setState(82);
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INT) | (1L << FLOAT) | (1L << STRING) | (1L << CHAR))) != 0) );
+			setState(84);
 			match(CBL);
 			}
 		}
@@ -434,43 +437,43 @@ public class KleberParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(84);
-			type();
-			setState(85);
-			match(VAR);
 			setState(86);
+			type();
+			setState(87);
+			match(VAR);
+			setState(88);
 			match(OEX);
-			setState(96);
+			setState(98);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INT) | (1L << FLOAT) | (1L << BOOLEAN) | (1L << STRING))) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INT) | (1L << FLOAT) | (1L << STRING) | (1L << CHAR))) != 0)) {
 				{
-				setState(92);
+				setState(94);
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,5,_ctx);
 				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 					if ( _alt==1 ) {
 						{
 						{
-						setState(87);
+						setState(89);
 						variable();
-						setState(88);
+						setState(90);
 						match(SEP);
 						}
 						} 
 					}
-					setState(94);
+					setState(96);
 					_errHandler.sync(this);
 					_alt = getInterpreter().adaptivePredict(_input,5,_ctx);
 				}
-				setState(95);
+				setState(97);
 				variable();
 				}
 			}
 
-			setState(98);
+			setState(100);
 			match(CEX);
-			setState(99);
+			setState(101);
 			functionBlock();
 			}
 		}
@@ -515,9 +518,9 @@ public class KleberParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(101);
+			setState(103);
 			match(MAIN);
-			setState(102);
+			setState(104);
 			block();
 			}
 		}
@@ -539,11 +542,17 @@ public class KleberParser extends Parser {
 		public ScanfContext scanf() {
 			return getRuleContext(ScanfContext.class,0);
 		}
+		public VariableContext variable() {
+			return getRuleContext(VariableContext.class,0);
+		}
 		public AtrContext atr() {
 			return getRuleContext(AtrContext.class,0);
 		}
 		public IfstmContext ifstm() {
 			return getRuleContext(IfstmContext.class,0);
+		}
+		public ForstmContext forstm() {
+			return getRuleContext(ForstmContext.class,0);
 		}
 		public RetContext ret() {
 			return getRuleContext(RetContext.class,0);
@@ -571,41 +580,58 @@ public class KleberParser extends Parser {
 		LineContext _localctx = new LineContext(_ctx, getState());
 		enterRule(_localctx, 12, RULE_line);
 		try {
-			setState(109);
+			setState(113);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case PRINTF:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(104);
+				setState(106);
 				printf();
 				}
 				break;
 			case SCANF:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(105);
+				setState(107);
 				scanf();
 				}
 				break;
-			case VAR:
+			case INT:
+			case FLOAT:
+			case STRING:
+			case CHAR:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(106);
+				setState(108);
+				variable();
+				}
+				break;
+			case VAR:
+				enterOuterAlt(_localctx, 4);
+				{
+				setState(109);
 				atr();
 				}
 				break;
 			case IF:
-				enterOuterAlt(_localctx, 4);
+				enterOuterAlt(_localctx, 5);
 				{
-				setState(107);
+				setState(110);
 				ifstm();
 				}
 				break;
-			case RETURN:
-				enterOuterAlt(_localctx, 5);
+			case FOR:
+				enterOuterAlt(_localctx, 6);
 				{
-				setState(108);
+				setState(111);
+				forstm();
+				}
+				break;
+			case RETURN:
+				enterOuterAlt(_localctx, 7);
+				{
+				setState(112);
 				ret();
 				}
 				break;
@@ -627,16 +653,10 @@ public class KleberParser extends Parser {
 	public static class PrintfContext extends ParserRuleContext {
 		public TerminalNode PRINTF() { return getToken(KleberParser.PRINTF, 0); }
 		public TerminalNode OEX() { return getToken(KleberParser.OEX, 0); }
-		public TerminalNode STR() { return getToken(KleberParser.STR, 0); }
+		public PrintparamContext printparam() {
+			return getRuleContext(PrintparamContext.class,0);
+		}
 		public TerminalNode CEX() { return getToken(KleberParser.CEX, 0); }
-		public List<TerminalNode> SEP() { return getTokens(KleberParser.SEP); }
-		public TerminalNode SEP(int i) {
-			return getToken(KleberParser.SEP, i);
-		}
-		public List<TerminalNode> VAR() { return getTokens(KleberParser.VAR); }
-		public TerminalNode VAR(int i) {
-			return getToken(KleberParser.VAR, i);
-		}
 		public PrintfContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -659,49 +679,126 @@ public class KleberParser extends Parser {
 	public final PrintfContext printf() throws RecognitionException {
 		PrintfContext _localctx = new PrintfContext(_ctx, getState());
 		enterRule(_localctx, 14, RULE_printf);
-		int _la;
 		try {
-			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(111);
+			setState(115);
 			match(PRINTF);
-			setState(112);
+			setState(116);
 			match(OEX);
-			setState(113);
-			match(STR);
+			setState(117);
+			printparam();
+			setState(118);
+			match(CEX);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	public static class PrintparamContext extends ParserRuleContext {
+		public PrintparamContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_printparam; }
+	 
+		public PrintparamContext() { }
+		public void copyFrom(PrintparamContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class PrintVARContext extends PrintparamContext {
+		public TerminalNode VAR() { return getToken(KleberParser.VAR, 0); }
+		public PrintVARContext(PrintparamContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterPrintVAR(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitPrintVAR(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitPrintVAR(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class PrinExprContext extends PrintparamContext {
+		public ExprContext expr() {
+			return getRuleContext(ExprContext.class,0);
+		}
+		public PrinExprContext(PrintparamContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterPrinExpr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitPrinExpr(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitPrinExpr(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class PrintSTRContext extends PrintparamContext {
+		public TerminalNode STR() { return getToken(KleberParser.STR, 0); }
+		public PrintSTRContext(PrintparamContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterPrintSTR(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitPrintSTR(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitPrintSTR(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+
+	public final PrintparamContext printparam() throws RecognitionException {
+		PrintparamContext _localctx = new PrintparamContext(_ctx, getState());
+		enterRule(_localctx, 16, RULE_printparam);
+		try {
 			setState(123);
 			_errHandler.sync(this);
-			_la = _input.LA(1);
-			if (_la==SEP) {
+			switch ( getInterpreter().adaptivePredict(_input,8,_ctx) ) {
+			case 1:
+				_localctx = new PrintSTRContext(_localctx);
+				enterOuterAlt(_localctx, 1);
 				{
-				setState(114);
-				match(SEP);
-				setState(119);
-				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,8,_ctx);
-				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
-						{
-						{
-						setState(115);
-						match(VAR);
-						setState(116);
-						match(SEP);
-						}
-						} 
-					}
-					setState(121);
-					_errHandler.sync(this);
-					_alt = getInterpreter().adaptivePredict(_input,8,_ctx);
+				setState(120);
+				match(STR);
 				}
-				setState(122);
+				break;
+			case 2:
+				_localctx = new PrintVARContext(_localctx);
+				enterOuterAlt(_localctx, 2);
+				{
+				setState(121);
 				match(VAR);
 				}
-			}
-
-			setState(125);
-			match(CEX);
+				break;
+			case 3:
+				_localctx = new PrinExprContext(_localctx);
+				enterOuterAlt(_localctx, 3);
+				{
+				setState(122);
+				expr();
+				}
+				break;
 			}
 		}
 		catch (RecognitionException re) {
@@ -718,16 +815,8 @@ public class KleberParser extends Parser {
 	public static class ScanfContext extends ParserRuleContext {
 		public TerminalNode SCANF() { return getToken(KleberParser.SCANF, 0); }
 		public TerminalNode OEX() { return getToken(KleberParser.OEX, 0); }
-		public TerminalNode STR() { return getToken(KleberParser.STR, 0); }
-		public List<TerminalNode> SEP() { return getTokens(KleberParser.SEP); }
-		public TerminalNode SEP(int i) {
-			return getToken(KleberParser.SEP, i);
-		}
+		public TerminalNode VAR() { return getToken(KleberParser.VAR, 0); }
 		public TerminalNode CEX() { return getToken(KleberParser.CEX, 0); }
-		public List<TerminalNode> VAR() { return getTokens(KleberParser.VAR); }
-		public TerminalNode VAR(int i) {
-			return getToken(KleberParser.VAR, i);
-		}
 		public ScanfContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -749,57 +838,17 @@ public class KleberParser extends Parser {
 
 	public final ScanfContext scanf() throws RecognitionException {
 		ScanfContext _localctx = new ScanfContext(_ctx, getState());
-		enterRule(_localctx, 16, RULE_scanf);
-		int _la;
+		enterRule(_localctx, 18, RULE_scanf);
 		try {
-			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(127);
+			setState(125);
 			match(SCANF);
-			setState(128);
+			setState(126);
 			match(OEX);
-			setState(129);
-			match(STR);
-			setState(130);
-			match(SEP);
-			setState(141); 
-			_errHandler.sync(this);
-			_la = _input.LA(1);
-			do {
-				{
-				{
-				setState(136);
-				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,10,_ctx);
-				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
-						{
-						{
-						setState(131);
-						match(T__0);
-						setState(132);
-						match(VAR);
-						setState(133);
-						match(SEP);
-						}
-						} 
-					}
-					setState(138);
-					_errHandler.sync(this);
-					_alt = getInterpreter().adaptivePredict(_input,10,_ctx);
-				}
-				setState(139);
-				match(T__0);
-				setState(140);
-				match(VAR);
-				}
-				}
-				setState(143); 
-				_errHandler.sync(this);
-				_la = _input.LA(1);
-			} while ( _la==T__0 );
-			setState(145);
+			setState(127);
+			match(VAR);
+			setState(128);
 			match(CEX);
 			}
 		}
@@ -847,48 +896,33 @@ public class KleberParser extends Parser {
 
 	public final VariableContext variable() throws RecognitionException {
 		VariableContext _localctx = new VariableContext(_ctx, getState());
-		enterRule(_localctx, 18, RULE_variable);
+		enterRule(_localctx, 20, RULE_variable);
 		try {
 			int _alt;
-			setState(159);
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(130);
+			type();
+			setState(131);
+			match(VAR);
+			setState(136);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,13,_ctx) ) {
-			case 1:
-				enterOuterAlt(_localctx, 1);
-				{
-				setState(147);
-				type();
-				setState(148);
-				match(VAR);
-				}
-				break;
-			case 2:
-				enterOuterAlt(_localctx, 2);
-				{
-				setState(150);
-				type();
-				setState(151);
-				match(VAR);
-				setState(156);
-				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,12,_ctx);
-				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
-					if ( _alt==1 ) {
-						{
-						{
-						setState(152);
-						match(SEP);
-						setState(153);
-						match(VAR);
-						}
-						} 
+			_alt = getInterpreter().adaptivePredict(_input,9,_ctx);
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+				if ( _alt==1 ) {
+					{
+					{
+					setState(132);
+					match(SEP);
+					setState(133);
+					match(VAR);
 					}
-					setState(158);
-					_errHandler.sync(this);
-					_alt = getInterpreter().adaptivePredict(_input,12,_ctx);
+					} 
 				}
-				}
-				break;
+				setState(138);
+				_errHandler.sync(this);
+				_alt = getInterpreter().adaptivePredict(_input,9,_ctx);
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -905,7 +939,7 @@ public class KleberParser extends Parser {
 	public static class TypeContext extends ParserRuleContext {
 		public TerminalNode INT() { return getToken(KleberParser.INT, 0); }
 		public TerminalNode FLOAT() { return getToken(KleberParser.FLOAT, 0); }
-		public TerminalNode BOOLEAN() { return getToken(KleberParser.BOOLEAN, 0); }
+		public TerminalNode CHAR() { return getToken(KleberParser.CHAR, 0); }
 		public TerminalNode STRING() { return getToken(KleberParser.STRING, 0); }
 		public TypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -928,14 +962,14 @@ public class KleberParser extends Parser {
 
 	public final TypeContext type() throws RecognitionException {
 		TypeContext _localctx = new TypeContext(_ctx, getState());
-		enterRule(_localctx, 20, RULE_type);
+		enterRule(_localctx, 22, RULE_type);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(161);
+			setState(139);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INT) | (1L << FLOAT) | (1L << BOOLEAN) | (1L << STRING))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INT) | (1L << FLOAT) | (1L << STRING) | (1L << CHAR))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -957,42 +991,119 @@ public class KleberParser extends Parser {
 	}
 
 	public static class AtrContext extends ParserRuleContext {
+		public AtrContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_atr; }
+	 
+		public AtrContext() { }
+		public void copyFrom(AtrContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class AtrCharContext extends AtrContext {
+		public TerminalNode VAR() { return getToken(KleberParser.VAR, 0); }
+		public TerminalNode ATR() { return getToken(KleberParser.ATR, 0); }
+		public TerminalNode CHARACTERE() { return getToken(KleberParser.CHARACTERE, 0); }
+		public AtrCharContext(AtrContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterAtrChar(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitAtrChar(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitAtrChar(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class AtrExprContext extends AtrContext {
 		public TerminalNode VAR() { return getToken(KleberParser.VAR, 0); }
 		public TerminalNode ATR() { return getToken(KleberParser.ATR, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
-		public AtrContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_atr; }
+		public AtrExprContext(AtrContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterAtr(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterAtrExpr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitAtr(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitAtrExpr(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitAtr(this);
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitAtrExpr(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class AtrStringContext extends AtrContext {
+		public TerminalNode VAR() { return getToken(KleberParser.VAR, 0); }
+		public TerminalNode ATR() { return getToken(KleberParser.ATR, 0); }
+		public TerminalNode STR() { return getToken(KleberParser.STR, 0); }
+		public AtrStringContext(AtrContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterAtrString(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitAtrString(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitAtrString(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
 	public final AtrContext atr() throws RecognitionException {
 		AtrContext _localctx = new AtrContext(_ctx, getState());
-		enterRule(_localctx, 22, RULE_atr);
+		enterRule(_localctx, 24, RULE_atr);
 		try {
-			enterOuterAlt(_localctx, 1);
-			{
-			setState(163);
-			match(VAR);
-			setState(164);
-			match(ATR);
-			setState(165);
-			expr();
+			setState(150);
+			_errHandler.sync(this);
+			switch ( getInterpreter().adaptivePredict(_input,10,_ctx) ) {
+			case 1:
+				_localctx = new AtrExprContext(_localctx);
+				enterOuterAlt(_localctx, 1);
+				{
+				setState(141);
+				match(VAR);
+				setState(142);
+				match(ATR);
+				setState(143);
+				expr();
+				}
+				break;
+			case 2:
+				_localctx = new AtrStringContext(_localctx);
+				enterOuterAlt(_localctx, 2);
+				{
+				setState(144);
+				match(VAR);
+				setState(145);
+				match(ATR);
+				setState(146);
+				match(STR);
+				}
+				break;
+			case 3:
+				_localctx = new AtrCharContext(_localctx);
+				enterOuterAlt(_localctx, 3);
+				{
+				setState(147);
+				match(VAR);
+				setState(148);
+				match(ATR);
+				setState(149);
+				match(CHARACTERE);
+				}
+				break;
 			}
 		}
 		catch (RecognitionException re) {
@@ -1007,6 +1118,17 @@ public class KleberParser extends Parser {
 	}
 
 	public static class IfstmContext extends ParserRuleContext {
+		public IfstmContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_ifstm; }
+	 
+		public IfstmContext() { }
+		public void copyFrom(IfstmContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class IfelsetContext extends IfstmContext {
 		public TerminalNode IF() { return getToken(KleberParser.IF, 0); }
 		public TerminalNode OEX() { return getToken(KleberParser.OEX, 0); }
 		public BoolExprContext boolExpr() {
@@ -1020,63 +1142,87 @@ public class KleberParser extends Parser {
 			return getRuleContext(BlockContext.class,i);
 		}
 		public TerminalNode ELSE() { return getToken(KleberParser.ELSE, 0); }
-		public IfstmContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_ifstm; }
+		public IfelsetContext(IfstmContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterIfstm(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterIfelset(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitIfstm(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitIfelset(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitIfstm(this);
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitIfelset(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class IftContext extends IfstmContext {
+		public TerminalNode IF() { return getToken(KleberParser.IF, 0); }
+		public TerminalNode OEX() { return getToken(KleberParser.OEX, 0); }
+		public BoolExprContext boolExpr() {
+			return getRuleContext(BoolExprContext.class,0);
+		}
+		public TerminalNode CEX() { return getToken(KleberParser.CEX, 0); }
+		public BlockContext block() {
+			return getRuleContext(BlockContext.class,0);
+		}
+		public IftContext(IfstmContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterIft(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitIft(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitIft(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
 	public final IfstmContext ifstm() throws RecognitionException {
 		IfstmContext _localctx = new IfstmContext(_ctx, getState());
-		enterRule(_localctx, 24, RULE_ifstm);
+		enterRule(_localctx, 26, RULE_ifstm);
 		try {
-			setState(181);
+			setState(166);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,14,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,11,_ctx) ) {
 			case 1:
+				_localctx = new IftContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(167);
+				setState(152);
 				match(IF);
-				setState(168);
+				setState(153);
 				match(OEX);
-				setState(169);
+				setState(154);
 				boolExpr();
-				setState(170);
+				setState(155);
 				match(CEX);
-				setState(171);
+				setState(156);
 				block();
 				}
 				break;
 			case 2:
+				_localctx = new IfelsetContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(173);
+				setState(158);
 				match(IF);
-				setState(174);
+				setState(159);
 				match(OEX);
-				setState(175);
+				setState(160);
 				boolExpr();
-				setState(176);
+				setState(161);
 				match(CEX);
-				setState(177);
+				setState(162);
 				block();
-				setState(178);
+				setState(163);
 				match(ELSE);
-				setState(179);
+				setState(164);
 				block();
 				}
 				break;
@@ -1094,11 +1240,19 @@ public class KleberParser extends Parser {
 	}
 
 	public static class ForstmContext extends ParserRuleContext {
-		public TerminalNode FOR() { return getToken(KleberParser.FOR, 0); }
-		public List<TerminalNode> CEX() { return getTokens(KleberParser.CEX); }
-		public TerminalNode CEX(int i) {
-			return getToken(KleberParser.CEX, i);
+		public ForstmContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
 		}
+		@Override public int getRuleIndex() { return RULE_forstm; }
+	 
+		public ForstmContext() { }
+		public void copyFrom(ForstmContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class ForContext extends ForstmContext {
+		public TerminalNode FOR() { return getToken(KleberParser.FOR, 0); }
+		public TerminalNode OEX() { return getToken(KleberParser.OEX, 0); }
 		public AtrContext atr() {
 			return getRuleContext(AtrContext.class,0);
 		}
@@ -1109,54 +1263,59 @@ public class KleberParser extends Parser {
 		public BoolExprContext boolExpr() {
 			return getRuleContext(BoolExprContext.class,0);
 		}
+		public TerminalNode VAR() { return getToken(KleberParser.VAR, 0); }
 		public IncrementContext increment() {
 			return getRuleContext(IncrementContext.class,0);
 		}
+		public TerminalNode NUM() { return getToken(KleberParser.NUM, 0); }
+		public TerminalNode CEX() { return getToken(KleberParser.CEX, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public ForstmContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_forstm; }
+		public ForContext(ForstmContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterForstm(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterFor(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitForstm(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitFor(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitForstm(this);
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitFor(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
 	public final ForstmContext forstm() throws RecognitionException {
 		ForstmContext _localctx = new ForstmContext(_ctx, getState());
-		enterRule(_localctx, 26, RULE_forstm);
+		enterRule(_localctx, 28, RULE_forstm);
 		try {
+			_localctx = new ForContext(_localctx);
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(183);
+			setState(168);
 			match(FOR);
-			setState(184);
-			match(CEX);
-			setState(185);
+			setState(169);
+			match(OEX);
+			setState(170);
 			atr();
-			setState(186);
+			setState(171);
 			match(EOL);
-			setState(187);
+			setState(172);
 			boolExpr();
-			setState(188);
+			setState(173);
 			match(EOL);
-			setState(189);
+			setState(174);
+			match(VAR);
+			setState(175);
 			increment();
-			setState(190);
+			setState(176);
+			match(NUM);
+			setState(177);
 			match(CEX);
-			setState(191);
+			setState(178);
 			block();
 			}
 		}
@@ -1172,6 +1331,40 @@ public class KleberParser extends Parser {
 	}
 
 	public static class ExprContext extends ParserRuleContext {
+		public ExprContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_expr; }
+	 
+		public ExprContext() { }
+		public void copyFrom(ExprContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class ExprSubContext extends ExprContext {
+		public TermContext term() {
+			return getRuleContext(TermContext.class,0);
+		}
+		public TerminalNode SUB() { return getToken(KleberParser.SUB, 0); }
+		public ExprContext expr() {
+			return getRuleContext(ExprContext.class,0);
+		}
+		public ExprSubContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprSub(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprSub(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprSub(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class ExprPlusContext extends ExprContext {
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
 		}
@@ -1179,59 +1372,77 @@ public class KleberParser extends Parser {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
-		public TerminalNode SUB() { return getToken(KleberParser.SUB, 0); }
-		public ExprContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_expr; }
+		public ExprPlusContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExpr(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprPlus(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExpr(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprPlus(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExpr(this);
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprPlus(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class ExprTermContext extends ExprContext {
+		public TermContext term() {
+			return getRuleContext(TermContext.class,0);
+		}
+		public ExprTermContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprTerm(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprTerm(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprTerm(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
 	public final ExprContext expr() throws RecognitionException {
 		ExprContext _localctx = new ExprContext(_ctx, getState());
-		enterRule(_localctx, 28, RULE_expr);
+		enterRule(_localctx, 30, RULE_expr);
 		try {
-			setState(202);
+			setState(189);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,15,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,12,_ctx) ) {
 			case 1:
+				_localctx = new ExprPlusContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(193);
+				setState(180);
 				term();
-				setState(194);
+				setState(181);
 				match(ADD);
-				setState(195);
+				setState(182);
 				expr();
 				}
 				break;
 			case 2:
+				_localctx = new ExprSubContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(197);
+				setState(184);
 				term();
-				setState(198);
+				setState(185);
 				match(SUB);
-				setState(199);
+				setState(186);
 				expr();
 				}
 				break;
 			case 3:
+				_localctx = new ExprTermContext(_localctx);
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(201);
+				setState(188);
 				term();
 				}
 				break;
@@ -1249,6 +1460,82 @@ public class KleberParser extends Parser {
 	}
 
 	public static class TermContext extends ParserRuleContext {
+		public TermContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_term; }
+	 
+		public TermContext() { }
+		public void copyFrom(TermContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class ExprDivContext extends TermContext {
+		public FactContext fact() {
+			return getRuleContext(FactContext.class,0);
+		}
+		public TerminalNode DIV() { return getToken(KleberParser.DIV, 0); }
+		public TermContext term() {
+			return getRuleContext(TermContext.class,0);
+		}
+		public ExprDivContext(TermContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprDiv(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprDiv(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprDiv(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class ExprModContext extends TermContext {
+		public FactContext fact() {
+			return getRuleContext(FactContext.class,0);
+		}
+		public TerminalNode MOD() { return getToken(KleberParser.MOD, 0); }
+		public TermContext term() {
+			return getRuleContext(TermContext.class,0);
+		}
+		public ExprModContext(TermContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprMod(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprMod(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprMod(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class ExprFactContext extends TermContext {
+		public FactContext fact() {
+			return getRuleContext(FactContext.class,0);
+		}
+		public ExprFactContext(TermContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprFact(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprFact(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprFact(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class ExprMultContext extends TermContext {
 		public FactContext fact() {
 			return getRuleContext(FactContext.class,0);
 		}
@@ -1256,71 +1543,70 @@ public class KleberParser extends Parser {
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
 		}
-		public TerminalNode DIV() { return getToken(KleberParser.DIV, 0); }
-		public TerminalNode MOD() { return getToken(KleberParser.MOD, 0); }
-		public TermContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_term; }
+		public ExprMultContext(TermContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterTerm(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprMult(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitTerm(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprMult(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitTerm(this);
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprMult(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
 	public final TermContext term() throws RecognitionException {
 		TermContext _localctx = new TermContext(_ctx, getState());
-		enterRule(_localctx, 30, RULE_term);
+		enterRule(_localctx, 32, RULE_term);
 		try {
-			setState(217);
+			setState(204);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,16,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,13,_ctx) ) {
 			case 1:
+				_localctx = new ExprMultContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(204);
+				setState(191);
 				fact();
-				setState(205);
+				setState(192);
 				match(MUL);
-				setState(206);
+				setState(193);
 				term();
 				}
 				break;
 			case 2:
+				_localctx = new ExprDivContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(208);
+				setState(195);
 				fact();
-				setState(209);
+				setState(196);
 				match(DIV);
-				setState(210);
+				setState(197);
 				term();
 				}
 				break;
 			case 3:
+				_localctx = new ExprModContext(_localctx);
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(212);
+				setState(199);
 				fact();
-				setState(213);
+				setState(200);
 				match(MOD);
-				setState(214);
+				setState(201);
 				term();
 				}
 				break;
 			case 4:
+				_localctx = new ExprFactContext(_localctx);
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(216);
+				setState(203);
 				fact();
 				}
 				break;
@@ -1338,61 +1624,104 @@ public class KleberParser extends Parser {
 	}
 
 	public static class FactContext extends ParserRuleContext {
-		public TerminalNode VAR() { return getToken(KleberParser.VAR, 0); }
+		public FactContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_fact; }
+	 
+		public FactContext() { }
+		public void copyFrom(FactContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class FactNUMContext extends FactContext {
 		public TerminalNode NUM() { return getToken(KleberParser.NUM, 0); }
+		public FactNUMContext(FactContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterFactNUM(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitFactNUM(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitFactNUM(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class FactVARContext extends FactContext {
+		public TerminalNode VAR() { return getToken(KleberParser.VAR, 0); }
+		public FactVARContext(FactContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterFactVAR(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitFactVAR(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitFactVAR(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class FactExprContext extends FactContext {
 		public TerminalNode OEX() { return getToken(KleberParser.OEX, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public TerminalNode CEX() { return getToken(KleberParser.CEX, 0); }
-		public FactContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_fact; }
+		public FactExprContext(FactContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterFact(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterFactExpr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitFact(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitFactExpr(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitFact(this);
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitFactExpr(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
 	public final FactContext fact() throws RecognitionException {
 		FactContext _localctx = new FactContext(_ctx, getState());
-		enterRule(_localctx, 32, RULE_fact);
+		enterRule(_localctx, 34, RULE_fact);
 		try {
-			setState(225);
+			setState(212);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case VAR:
+				_localctx = new FactVARContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(219);
+				setState(206);
 				match(VAR);
 				}
 				break;
 			case NUM:
+				_localctx = new FactNUMContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(220);
+				setState(207);
 				match(NUM);
 				}
 				break;
 			case OEX:
+				_localctx = new FactExprContext(_localctx);
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(221);
+				setState(208);
 				match(OEX);
-				setState(222);
+				setState(209);
 				expr();
-				setState(223);
+				setState(210);
 				match(CEX);
 				}
 				break;
@@ -1412,88 +1741,115 @@ public class KleberParser extends Parser {
 	}
 
 	public static class BoolExprContext extends ParserRuleContext {
+		public BoolExprContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_boolExpr; }
+	 
+		public BoolExprContext() { }
+		public void copyFrom(BoolExprContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class ExprBoolContext extends BoolExprContext {
 		public List<FactContext> fact() {
 			return getRuleContexts(FactContext.class);
 		}
 		public FactContext fact(int i) {
 			return getRuleContext(FactContext.class,i);
 		}
-		public TerminalNode NOT() { return getToken(KleberParser.NOT, 0); }
-		public BoolExprContext boolExpr() {
-			return getRuleContext(BoolExprContext.class,0);
-		}
 		public RelopContext relop() {
 			return getRuleContext(RelopContext.class,0);
 		}
-		public TerminalNode TRUE() { return getToken(KleberParser.TRUE, 0); }
-		public TerminalNode FALSE() { return getToken(KleberParser.FALSE, 0); }
-		public BoolExprContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_boolExpr; }
+		public ExprBoolContext(BoolExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterBoolExpr(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprBool(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitBoolExpr(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprBool(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitBoolExpr(this);
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprBool(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class ExprFalseContext extends BoolExprContext {
+		public TerminalNode FALSE() { return getToken(KleberParser.FALSE, 0); }
+		public ExprFalseContext(BoolExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprFalse(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprFalse(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprFalse(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class ExprTrueContext extends BoolExprContext {
+		public TerminalNode TRUE() { return getToken(KleberParser.TRUE, 0); }
+		public ExprTrueContext(BoolExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterExprTrue(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitExprTrue(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitExprTrue(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
 	public final BoolExprContext boolExpr() throws RecognitionException {
 		BoolExprContext _localctx = new BoolExprContext(_ctx, getState());
-		enterRule(_localctx, 34, RULE_boolExpr);
+		enterRule(_localctx, 36, RULE_boolExpr);
 		try {
-			setState(236);
+			setState(220);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,18,_ctx) ) {
-			case 1:
+			switch (_input.LA(1)) {
+			case NUM:
+			case VAR:
+			case OEX:
+				_localctx = new ExprBoolContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(227);
+				setState(214);
+				fact();
+				setState(215);
+				relop();
+				setState(216);
 				fact();
 				}
 				break;
-			case 2:
+			case TRUE:
+				_localctx = new ExprTrueContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(228);
-				match(NOT);
-				setState(229);
-				boolExpr();
-				}
-				break;
-			case 3:
-				enterOuterAlt(_localctx, 3);
-				{
-				setState(230);
-				fact();
-				setState(231);
-				relop();
-				setState(232);
-				fact();
-				}
-				break;
-			case 4:
-				enterOuterAlt(_localctx, 4);
-				{
-				setState(234);
+				setState(218);
 				match(TRUE);
 				}
 				break;
-			case 5:
-				enterOuterAlt(_localctx, 5);
+			case FALSE:
+				_localctx = new ExprFalseContext(_localctx);
+				enterOuterAlt(_localctx, 3);
 				{
-				setState(235);
+				setState(219);
 				match(FALSE);
 				}
 				break;
+			default:
+				throw new NoViableAltException(this);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1535,12 +1891,12 @@ public class KleberParser extends Parser {
 
 	public final RelopContext relop() throws RecognitionException {
 		RelopContext _localctx = new RelopContext(_ctx, getState());
-		enterRule(_localctx, 36, RULE_relop);
+		enterRule(_localctx, 38, RULE_relop);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(238);
+			setState(222);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << GR) | (1L << LS) | (1L << EQ) | (1L << GRT) | (1L << LST) | (1L << NEQ))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -1587,12 +1943,12 @@ public class KleberParser extends Parser {
 
 	public final IncrementContext increment() throws RecognitionException {
 		IncrementContext _localctx = new IncrementContext(_ctx, getState());
-		enterRule(_localctx, 38, RULE_increment);
+		enterRule(_localctx, 40, RULE_increment);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(240);
+			setState(224);
 			_la = _input.LA(1);
 			if ( !(_la==PEG || _la==MEG) ) {
 			_errHandler.recoverInline(this);
@@ -1649,30 +2005,30 @@ public class KleberParser extends Parser {
 
 	public final BlockContext block() throws RecognitionException {
 		BlockContext _localctx = new BlockContext(_ctx, getState());
-		enterRule(_localctx, 40, RULE_block);
+		enterRule(_localctx, 42, RULE_block);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(242);
+			setState(226);
 			match(OBL);
-			setState(246); 
+			setState(230); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(243);
+				setState(227);
 				line();
-				setState(244);
+				setState(228);
 				match(EOL);
 				}
 				}
-				setState(248); 
+				setState(232); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << RETURN) | (1L << PRINTF) | (1L << SCANF) | (1L << IF) | (1L << VAR))) != 0) );
-			setState(250);
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << RETURN) | (1L << PRINTF) | (1L << SCANF) | (1L << INT) | (1L << FLOAT) | (1L << STRING) | (1L << CHAR) | (1L << IF) | (1L << FOR) | (1L << VAR))) != 0) );
+			setState(234);
 			match(CBL);
 			}
 		}
@@ -1688,42 +2044,45 @@ public class KleberParser extends Parser {
 	}
 
 	public static class RetContext extends ParserRuleContext {
-		public TerminalNode RETURN() { return getToken(KleberParser.RETURN, 0); }
-		public ExprContext expr() {
-			return getRuleContext(ExprContext.class,0);
-		}
-		public TerminalNode EOL() { return getToken(KleberParser.EOL, 0); }
 		public RetContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_ret; }
+	 
+		public RetContext() { }
+		public void copyFrom(RetContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class Return0Context extends RetContext {
+		public TerminalNode RETURN() { return getToken(KleberParser.RETURN, 0); }
+		public Return0Context(RetContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterRet(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).enterReturn0(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitRet(this);
+			if ( listener instanceof KleberListener ) ((KleberListener)listener).exitReturn0(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitRet(this);
+			if ( visitor instanceof KleberVisitor ) return ((KleberVisitor<? extends T>)visitor).visitReturn0(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
 	public final RetContext ret() throws RecognitionException {
 		RetContext _localctx = new RetContext(_ctx, getState());
-		enterRule(_localctx, 42, RULE_ret);
+		enterRule(_localctx, 44, RULE_ret);
 		try {
+			_localctx = new Return0Context(_localctx);
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(252);
+			setState(236);
 			match(RETURN);
-			setState(253);
-			expr();
-			setState(254);
-			match(EOL);
+			setState(237);
+			match(T__0);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1774,43 +2133,43 @@ public class KleberParser extends Parser {
 
 	public final FunctionBlockContext functionBlock() throws RecognitionException {
 		FunctionBlockContext _localctx = new FunctionBlockContext(_ctx, getState());
-		enterRule(_localctx, 44, RULE_functionBlock);
+		enterRule(_localctx, 46, RULE_functionBlock);
 		int _la;
 		try {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(256);
+			setState(239);
 			match(OBL);
-			setState(262);
+			setState(245);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,20,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,17,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(257);
+					setState(240);
 					line();
-					setState(258);
+					setState(241);
 					match(EOL);
 					}
 					} 
 				}
-				setState(264);
+				setState(247);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,20,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,17,_ctx);
 			}
-			setState(266);
+			setState(249);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==RETURN) {
 				{
-				setState(265);
+				setState(248);
 				ret();
 				}
 			}
 
-			setState(268);
+			setState(251);
 			match(CBL);
 			}
 		}
@@ -1826,94 +2185,87 @@ public class KleberParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3.\u0111\4\2\t\2\4"+
-		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
-		"\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
-		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\3\2\6\2\62"+
-		"\n\2\r\2\16\2\63\3\2\5\2\67\n\2\3\2\5\2:\n\2\3\2\3\2\3\3\3\3\3\3\3\4\3"+
-		"\4\3\4\3\4\3\4\6\4F\n\4\r\4\16\4G\3\4\3\4\3\5\3\5\3\5\3\5\3\5\6\5Q\n\5"+
-		"\r\5\16\5R\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6\7\6]\n\6\f\6\16\6`\13\6\3\6"+
-		"\5\6c\n\6\3\6\3\6\3\6\3\7\3\7\3\7\3\b\3\b\3\b\3\b\3\b\5\bp\n\b\3\t\3\t"+
-		"\3\t\3\t\3\t\3\t\7\tx\n\t\f\t\16\t{\13\t\3\t\5\t~\n\t\3\t\3\t\3\n\3\n"+
-		"\3\n\3\n\3\n\3\n\3\n\7\n\u0089\n\n\f\n\16\n\u008c\13\n\3\n\3\n\6\n\u0090"+
-		"\n\n\r\n\16\n\u0091\3\n\3\n\3\13\3\13\3\13\3\13\3\13\3\13\3\13\7\13\u009d"+
-		"\n\13\f\13\16\13\u00a0\13\13\5\13\u00a2\n\13\3\f\3\f\3\r\3\r\3\r\3\r\3"+
-		"\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\5"+
-		"\16\u00b8\n\16\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\20"+
-		"\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\5\20\u00cd\n\20\3\21\3\21\3\21"+
-		"\3\21\3\21\3\21\3\21\3\21\3\21\3\21\3\21\3\21\3\21\5\21\u00dc\n\21\3\22"+
-		"\3\22\3\22\3\22\3\22\3\22\5\22\u00e4\n\22\3\23\3\23\3\23\3\23\3\23\3\23"+
-		"\3\23\3\23\3\23\5\23\u00ef\n\23\3\24\3\24\3\25\3\25\3\26\3\26\3\26\3\26"+
-		"\6\26\u00f9\n\26\r\26\16\26\u00fa\3\26\3\26\3\27\3\27\3\27\3\27\3\30\3"+
-		"\30\3\30\3\30\7\30\u0107\n\30\f\30\16\30\u010a\13\30\3\30\5\30\u010d\n"+
-		"\30\3\30\3\30\3\30\2\2\31\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&"+
-		"(*,.\2\5\3\2\b\13\3\2\31\36\3\2 !\u0119\2\61\3\2\2\2\4=\3\2\2\2\6@\3\2"+
-		"\2\2\bK\3\2\2\2\nV\3\2\2\2\fg\3\2\2\2\16o\3\2\2\2\20q\3\2\2\2\22\u0081"+
-		"\3\2\2\2\24\u00a1\3\2\2\2\26\u00a3\3\2\2\2\30\u00a5\3\2\2\2\32\u00b7\3"+
-		"\2\2\2\34\u00b9\3\2\2\2\36\u00cc\3\2\2\2 \u00db\3\2\2\2\"\u00e3\3\2\2"+
-		"\2$\u00ee\3\2\2\2&\u00f0\3\2\2\2(\u00f2\3\2\2\2*\u00f4\3\2\2\2,\u00fe"+
-		"\3\2\2\2.\u0102\3\2\2\2\60\62\5\4\3\2\61\60\3\2\2\2\62\63\3\2\2\2\63\61"+
-		"\3\2\2\2\63\64\3\2\2\2\64\66\3\2\2\2\65\67\5\6\4\2\66\65\3\2\2\2\66\67"+
-		"\3\2\2\2\679\3\2\2\28:\5\b\5\298\3\2\2\29:\3\2\2\2:;\3\2\2\2;<\5\f\7\2"+
-		"<\3\3\2\2\2=>\7\24\2\2>?\7\26\2\2?\5\3\2\2\2@A\7\25\2\2AE\7$\2\2BC\5\24"+
-		"\13\2CD\7-\2\2DF\3\2\2\2EB\3\2\2\2FG\3\2\2\2GE\3\2\2\2GH\3\2\2\2HI\3\2"+
-		"\2\2IJ\7%\2\2J\7\3\2\2\2KL\7\7\2\2LP\7$\2\2MN\5\n\6\2NO\7-\2\2OQ\3\2\2"+
-		"\2PM\3\2\2\2QR\3\2\2\2RP\3\2\2\2RS\3\2\2\2ST\3\2\2\2TU\7%\2\2U\t\3\2\2"+
-		"\2VW\5\26\f\2WX\7\30\2\2Xb\7\"\2\2YZ\5\24\13\2Z[\7+\2\2[]\3\2\2\2\\Y\3"+
-		"\2\2\2]`\3\2\2\2^\\\3\2\2\2^_\3\2\2\2_a\3\2\2\2`^\3\2\2\2ac\5\24\13\2"+
-		"b^\3\2\2\2bc\3\2\2\2cd\3\2\2\2de\7#\2\2ef\5.\30\2f\13\3\2\2\2gh\7\23\2"+
-		"\2hi\5*\26\2i\r\3\2\2\2jp\5\20\t\2kp\5\22\n\2lp\5\30\r\2mp\5\32\16\2n"+
-		"p\5,\27\2oj\3\2\2\2ok\3\2\2\2ol\3\2\2\2om\3\2\2\2on\3\2\2\2p\17\3\2\2"+
-		"\2qr\7\5\2\2rs\7\"\2\2s}\7\26\2\2ty\7+\2\2uv\7\30\2\2vx\7+\2\2wu\3\2\2"+
-		"\2x{\3\2\2\2yw\3\2\2\2yz\3\2\2\2z|\3\2\2\2{y\3\2\2\2|~\7\30\2\2}t\3\2"+
-		"\2\2}~\3\2\2\2~\177\3\2\2\2\177\u0080\7#\2\2\u0080\21\3\2\2\2\u0081\u0082"+
-		"\7\6\2\2\u0082\u0083\7\"\2\2\u0083\u0084\7\26\2\2\u0084\u008f\7+\2\2\u0085"+
-		"\u0086\7\3\2\2\u0086\u0087\7\30\2\2\u0087\u0089\7+\2\2\u0088\u0085\3\2"+
-		"\2\2\u0089\u008c\3\2\2\2\u008a\u0088\3\2\2\2\u008a\u008b\3\2\2\2\u008b"+
-		"\u008d\3\2\2\2\u008c\u008a\3\2\2\2\u008d\u008e\7\3\2\2\u008e\u0090\7\30"+
-		"\2\2\u008f\u008a\3\2\2\2\u0090\u0091\3\2\2\2\u0091\u008f\3\2\2\2\u0091"+
-		"\u0092\3\2\2\2\u0092\u0093\3\2\2\2\u0093\u0094\7#\2\2\u0094\23\3\2\2\2"+
-		"\u0095\u0096\5\26\f\2\u0096\u0097\7\30\2\2\u0097\u00a2\3\2\2\2\u0098\u0099"+
-		"\5\26\f\2\u0099\u009e\7\30\2\2\u009a\u009b\7+\2\2\u009b\u009d\7\30\2\2"+
-		"\u009c\u009a\3\2\2\2\u009d\u00a0\3\2\2\2\u009e\u009c\3\2\2\2\u009e\u009f"+
-		"\3\2\2\2\u009f\u00a2\3\2\2\2\u00a0\u009e\3\2\2\2\u00a1\u0095\3\2\2\2\u00a1"+
-		"\u0098\3\2\2\2\u00a2\25\3\2\2\2\u00a3\u00a4\t\2\2\2\u00a4\27\3\2\2\2\u00a5"+
-		"\u00a6\7\30\2\2\u00a6\u00a7\7\37\2\2\u00a7\u00a8\5\36\20\2\u00a8\31\3"+
-		"\2\2\2\u00a9\u00aa\7\20\2\2\u00aa\u00ab\7\"\2\2\u00ab\u00ac\5$\23\2\u00ac"+
-		"\u00ad\7#\2\2\u00ad\u00ae\5*\26\2\u00ae\u00b8\3\2\2\2\u00af\u00b0\7\20"+
-		"\2\2\u00b0\u00b1\7\"\2\2\u00b1\u00b2\5$\23\2\u00b2\u00b3\7#\2\2\u00b3"+
-		"\u00b4\5*\26\2\u00b4\u00b5\7\21\2\2\u00b5\u00b6\5*\26\2\u00b6\u00b8\3"+
-		"\2\2\2\u00b7\u00a9\3\2\2\2\u00b7\u00af\3\2\2\2\u00b8\33\3\2\2\2\u00b9"+
-		"\u00ba\7\22\2\2\u00ba\u00bb\7#\2\2\u00bb\u00bc\5\30\r\2\u00bc\u00bd\7"+
-		"-\2\2\u00bd\u00be\5$\23\2\u00be\u00bf\7-\2\2\u00bf\u00c0\5(\25\2\u00c0"+
-		"\u00c1\7#\2\2\u00c1\u00c2\5*\26\2\u00c2\35\3\2\2\2\u00c3\u00c4\5 \21\2"+
-		"\u00c4\u00c5\7\'\2\2\u00c5\u00c6\5\36\20\2\u00c6\u00cd\3\2\2\2\u00c7\u00c8"+
-		"\5 \21\2\u00c8\u00c9\7(\2\2\u00c9\u00ca\5\36\20\2\u00ca\u00cd\3\2\2\2"+
-		"\u00cb\u00cd\5 \21\2\u00cc\u00c3\3\2\2\2\u00cc\u00c7\3\2\2\2\u00cc\u00cb"+
-		"\3\2\2\2\u00cd\37\3\2\2\2\u00ce\u00cf\5\"\22\2\u00cf\u00d0\7)\2\2\u00d0"+
-		"\u00d1\5 \21\2\u00d1\u00dc\3\2\2\2\u00d2\u00d3\5\"\22\2\u00d3\u00d4\7"+
-		"*\2\2\u00d4\u00d5\5 \21\2\u00d5\u00dc\3\2\2\2\u00d6\u00d7\5\"\22\2\u00d7"+
-		"\u00d8\7,\2\2\u00d8\u00d9\5 \21\2\u00d9\u00dc\3\2\2\2\u00da\u00dc\5\""+
-		"\22\2\u00db\u00ce\3\2\2\2\u00db\u00d2\3\2\2\2\u00db\u00d6\3\2\2\2\u00db"+
-		"\u00da\3\2\2\2\u00dc!\3\2\2\2\u00dd\u00e4\7\30\2\2\u00de\u00e4\7\27\2"+
-		"\2\u00df\u00e0\7\"\2\2\u00e0\u00e1\5\36\20\2\u00e1\u00e2\7#\2\2\u00e2"+
-		"\u00e4\3\2\2\2\u00e3\u00dd\3\2\2\2\u00e3\u00de\3\2\2\2\u00e3\u00df\3\2"+
-		"\2\2\u00e4#\3\2\2\2\u00e5\u00ef\5\"\22\2\u00e6\u00e7\7&\2\2\u00e7\u00ef"+
-		"\5$\23\2\u00e8\u00e9\5\"\22\2\u00e9\u00ea\5&\24\2\u00ea\u00eb\5\"\22\2"+
-		"\u00eb\u00ef\3\2\2\2\u00ec\u00ef\7\f\2\2\u00ed\u00ef\7\r\2\2\u00ee\u00e5"+
-		"\3\2\2\2\u00ee\u00e6\3\2\2\2\u00ee\u00e8\3\2\2\2\u00ee\u00ec\3\2\2\2\u00ee"+
-		"\u00ed\3\2\2\2\u00ef%\3\2\2\2\u00f0\u00f1\t\3\2\2\u00f1\'\3\2\2\2\u00f2"+
-		"\u00f3\t\4\2\2\u00f3)\3\2\2\2\u00f4\u00f8\7$\2\2\u00f5\u00f6\5\16\b\2"+
-		"\u00f6\u00f7\7-\2\2\u00f7\u00f9\3\2\2\2\u00f8\u00f5\3\2\2\2\u00f9\u00fa"+
-		"\3\2\2\2\u00fa\u00f8\3\2\2\2\u00fa\u00fb\3\2\2\2\u00fb\u00fc\3\2\2\2\u00fc"+
-		"\u00fd\7%\2\2\u00fd+\3\2\2\2\u00fe\u00ff\7\4\2\2\u00ff\u0100\5\36\20\2"+
-		"\u0100\u0101\7-\2\2\u0101-\3\2\2\2\u0102\u0108\7$\2\2\u0103\u0104\5\16"+
-		"\b\2\u0104\u0105\7-\2\2\u0105\u0107\3\2\2\2\u0106\u0103\3\2\2\2\u0107"+
-		"\u010a\3\2\2\2\u0108\u0106\3\2\2\2\u0108\u0109\3\2\2\2\u0109\u010c\3\2"+
-		"\2\2\u010a\u0108\3\2\2\2\u010b\u010d\5,\27\2\u010c\u010b\3\2\2\2\u010c"+
-		"\u010d\3\2\2\2\u010d\u010e\3\2\2\2\u010e\u010f\7%\2\2\u010f/\3\2\2\2\30"+
-		"\63\669GR^boy}\u008a\u0091\u009e\u00a1\u00b7\u00cc\u00db\u00e3\u00ee\u00fa"+
-		"\u0108\u010c";
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\60\u0100\4\2\t\2"+
+		"\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
+		"\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
+		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31\t\31"+
+		"\3\2\6\2\64\n\2\r\2\16\2\65\3\2\5\29\n\2\3\2\5\2<\n\2\3\2\3\2\3\3\3\3"+
+		"\3\3\3\4\3\4\3\4\3\4\3\4\6\4H\n\4\r\4\16\4I\3\4\3\4\3\5\3\5\3\5\3\5\3"+
+		"\5\6\5S\n\5\r\5\16\5T\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6\7\6_\n\6\f\6\16"+
+		"\6b\13\6\3\6\5\6e\n\6\3\6\3\6\3\6\3\7\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3\b"+
+		"\3\b\5\bt\n\b\3\t\3\t\3\t\3\t\3\t\3\n\3\n\3\n\5\n~\n\n\3\13\3\13\3\13"+
+		"\3\13\3\13\3\f\3\f\3\f\3\f\7\f\u0089\n\f\f\f\16\f\u008c\13\f\3\r\3\r\3"+
+		"\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\5\16\u0099\n\16\3\17\3\17"+
+		"\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\5\17\u00a9"+
+		"\n\17\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\21"+
+		"\3\21\3\21\3\21\3\21\3\21\3\21\3\21\3\21\5\21\u00c0\n\21\3\22\3\22\3\22"+
+		"\3\22\3\22\3\22\3\22\3\22\3\22\3\22\3\22\3\22\3\22\5\22\u00cf\n\22\3\23"+
+		"\3\23\3\23\3\23\3\23\3\23\5\23\u00d7\n\23\3\24\3\24\3\24\3\24\3\24\3\24"+
+		"\5\24\u00df\n\24\3\25\3\25\3\26\3\26\3\27\3\27\3\27\3\27\6\27\u00e9\n"+
+		"\27\r\27\16\27\u00ea\3\27\3\27\3\30\3\30\3\30\3\31\3\31\3\31\3\31\7\31"+
+		"\u00f6\n\31\f\31\16\31\u00f9\13\31\3\31\5\31\u00fc\n\31\3\31\3\31\3\31"+
+		"\2\2\32\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\2\5\3\2\b\13"+
+		"\3\2\32\37\3\2\"#\u0106\2\63\3\2\2\2\4?\3\2\2\2\6B\3\2\2\2\bM\3\2\2\2"+
+		"\nX\3\2\2\2\fi\3\2\2\2\16s\3\2\2\2\20u\3\2\2\2\22}\3\2\2\2\24\177\3\2"+
+		"\2\2\26\u0084\3\2\2\2\30\u008d\3\2\2\2\32\u0098\3\2\2\2\34\u00a8\3\2\2"+
+		"\2\36\u00aa\3\2\2\2 \u00bf\3\2\2\2\"\u00ce\3\2\2\2$\u00d6\3\2\2\2&\u00de"+
+		"\3\2\2\2(\u00e0\3\2\2\2*\u00e2\3\2\2\2,\u00e4\3\2\2\2.\u00ee\3\2\2\2\60"+
+		"\u00f1\3\2\2\2\62\64\5\4\3\2\63\62\3\2\2\2\64\65\3\2\2\2\65\63\3\2\2\2"+
+		"\65\66\3\2\2\2\668\3\2\2\2\679\5\6\4\28\67\3\2\2\289\3\2\2\29;\3\2\2\2"+
+		":<\5\b\5\2;:\3\2\2\2;<\3\2\2\2<=\3\2\2\2=>\5\f\7\2>\3\3\2\2\2?@\7\24\2"+
+		"\2@A\7\26\2\2A\5\3\2\2\2BC\7\25\2\2CG\7&\2\2DE\5\26\f\2EF\7/\2\2FH\3\2"+
+		"\2\2GD\3\2\2\2HI\3\2\2\2IG\3\2\2\2IJ\3\2\2\2JK\3\2\2\2KL\7\'\2\2L\7\3"+
+		"\2\2\2MN\7\7\2\2NR\7&\2\2OP\5\n\6\2PQ\7/\2\2QS\3\2\2\2RO\3\2\2\2ST\3\2"+
+		"\2\2TR\3\2\2\2TU\3\2\2\2UV\3\2\2\2VW\7\'\2\2W\t\3\2\2\2XY\5\30\r\2YZ\7"+
+		"\30\2\2Zd\7$\2\2[\\\5\26\f\2\\]\7-\2\2]_\3\2\2\2^[\3\2\2\2_b\3\2\2\2`"+
+		"^\3\2\2\2`a\3\2\2\2ac\3\2\2\2b`\3\2\2\2ce\5\26\f\2d`\3\2\2\2de\3\2\2\2"+
+		"ef\3\2\2\2fg\7%\2\2gh\5\60\31\2h\13\3\2\2\2ij\7\23\2\2jk\5,\27\2k\r\3"+
+		"\2\2\2lt\5\20\t\2mt\5\24\13\2nt\5\26\f\2ot\5\32\16\2pt\5\34\17\2qt\5\36"+
+		"\20\2rt\5.\30\2sl\3\2\2\2sm\3\2\2\2sn\3\2\2\2so\3\2\2\2sp\3\2\2\2sq\3"+
+		"\2\2\2sr\3\2\2\2t\17\3\2\2\2uv\7\5\2\2vw\7$\2\2wx\5\22\n\2xy\7%\2\2y\21"+
+		"\3\2\2\2z~\7\26\2\2{~\7\30\2\2|~\5 \21\2}z\3\2\2\2}{\3\2\2\2}|\3\2\2\2"+
+		"~\23\3\2\2\2\177\u0080\7\6\2\2\u0080\u0081\7$\2\2\u0081\u0082\7\30\2\2"+
+		"\u0082\u0083\7%\2\2\u0083\25\3\2\2\2\u0084\u0085\5\30\r\2\u0085\u008a"+
+		"\7\30\2\2\u0086\u0087\7-\2\2\u0087\u0089\7\30\2\2\u0088\u0086\3\2\2\2"+
+		"\u0089\u008c\3\2\2\2\u008a\u0088\3\2\2\2\u008a\u008b\3\2\2\2\u008b\27"+
+		"\3\2\2\2\u008c\u008a\3\2\2\2\u008d\u008e\t\2\2\2\u008e\31\3\2\2\2\u008f"+
+		"\u0090\7\30\2\2\u0090\u0091\7 \2\2\u0091\u0099\5 \21\2\u0092\u0093\7\30"+
+		"\2\2\u0093\u0094\7 \2\2\u0094\u0099\7\26\2\2\u0095\u0096\7\30\2\2\u0096"+
+		"\u0097\7 \2\2\u0097\u0099\7\31\2\2\u0098\u008f\3\2\2\2\u0098\u0092\3\2"+
+		"\2\2\u0098\u0095\3\2\2\2\u0099\33\3\2\2\2\u009a\u009b\7\20\2\2\u009b\u009c"+
+		"\7$\2\2\u009c\u009d\5&\24\2\u009d\u009e\7%\2\2\u009e\u009f\5,\27\2\u009f"+
+		"\u00a9\3\2\2\2\u00a0\u00a1\7\20\2\2\u00a1\u00a2\7$\2\2\u00a2\u00a3\5&"+
+		"\24\2\u00a3\u00a4\7%\2\2\u00a4\u00a5\5,\27\2\u00a5\u00a6\7\21\2\2\u00a6"+
+		"\u00a7\5,\27\2\u00a7\u00a9\3\2\2\2\u00a8\u009a\3\2\2\2\u00a8\u00a0\3\2"+
+		"\2\2\u00a9\35\3\2\2\2\u00aa\u00ab\7\22\2\2\u00ab\u00ac\7$\2\2\u00ac\u00ad"+
+		"\5\32\16\2\u00ad\u00ae\7/\2\2\u00ae\u00af\5&\24\2\u00af\u00b0\7/\2\2\u00b0"+
+		"\u00b1\7\30\2\2\u00b1\u00b2\5*\26\2\u00b2\u00b3\7\27\2\2\u00b3\u00b4\7"+
+		"%\2\2\u00b4\u00b5\5,\27\2\u00b5\37\3\2\2\2\u00b6\u00b7\5\"\22\2\u00b7"+
+		"\u00b8\7)\2\2\u00b8\u00b9\5 \21\2\u00b9\u00c0\3\2\2\2\u00ba\u00bb\5\""+
+		"\22\2\u00bb\u00bc\7*\2\2\u00bc\u00bd\5 \21\2\u00bd\u00c0\3\2\2\2\u00be"+
+		"\u00c0\5\"\22\2\u00bf\u00b6\3\2\2\2\u00bf\u00ba\3\2\2\2\u00bf\u00be\3"+
+		"\2\2\2\u00c0!\3\2\2\2\u00c1\u00c2\5$\23\2\u00c2\u00c3\7+\2\2\u00c3\u00c4"+
+		"\5\"\22\2\u00c4\u00cf\3\2\2\2\u00c5\u00c6\5$\23\2\u00c6\u00c7\7,\2\2\u00c7"+
+		"\u00c8\5\"\22\2\u00c8\u00cf\3\2\2\2\u00c9\u00ca\5$\23\2\u00ca\u00cb\7"+
+		".\2\2\u00cb\u00cc\5\"\22\2\u00cc\u00cf\3\2\2\2\u00cd\u00cf\5$\23\2\u00ce"+
+		"\u00c1\3\2\2\2\u00ce\u00c5\3\2\2\2\u00ce\u00c9\3\2\2\2\u00ce\u00cd\3\2"+
+		"\2\2\u00cf#\3\2\2\2\u00d0\u00d7\7\30\2\2\u00d1\u00d7\7\27\2\2\u00d2\u00d3"+
+		"\7$\2\2\u00d3\u00d4\5 \21\2\u00d4\u00d5\7%\2\2\u00d5\u00d7\3\2\2\2\u00d6"+
+		"\u00d0\3\2\2\2\u00d6\u00d1\3\2\2\2\u00d6\u00d2\3\2\2\2\u00d7%\3\2\2\2"+
+		"\u00d8\u00d9\5$\23\2\u00d9\u00da\5(\25\2\u00da\u00db\5$\23\2\u00db\u00df"+
+		"\3\2\2\2\u00dc\u00df\7\f\2\2\u00dd\u00df\7\r\2\2\u00de\u00d8\3\2\2\2\u00de"+
+		"\u00dc\3\2\2\2\u00de\u00dd\3\2\2\2\u00df\'\3\2\2\2\u00e0\u00e1\t\3\2\2"+
+		"\u00e1)\3\2\2\2\u00e2\u00e3\t\4\2\2\u00e3+\3\2\2\2\u00e4\u00e8\7&\2\2"+
+		"\u00e5\u00e6\5\16\b\2\u00e6\u00e7\7/\2\2\u00e7\u00e9\3\2\2\2\u00e8\u00e5"+
+		"\3\2\2\2\u00e9\u00ea\3\2\2\2\u00ea\u00e8\3\2\2\2\u00ea\u00eb\3\2\2\2\u00eb"+
+		"\u00ec\3\2\2\2\u00ec\u00ed\7\'\2\2\u00ed-\3\2\2\2\u00ee\u00ef\7\4\2\2"+
+		"\u00ef\u00f0\7\3\2\2\u00f0/\3\2\2\2\u00f1\u00f7\7&\2\2\u00f2\u00f3\5\16"+
+		"\b\2\u00f3\u00f4\7/\2\2\u00f4\u00f6\3\2\2\2\u00f5\u00f2\3\2\2\2\u00f6"+
+		"\u00f9\3\2\2\2\u00f7\u00f5\3\2\2\2\u00f7\u00f8\3\2\2\2\u00f8\u00fb\3\2"+
+		"\2\2\u00f9\u00f7\3\2\2\2\u00fa\u00fc\5.\30\2\u00fb\u00fa\3\2\2\2\u00fb"+
+		"\u00fc\3\2\2\2\u00fc\u00fd\3\2\2\2\u00fd\u00fe\7\'\2\2\u00fe\61\3\2\2"+
+		"\2\25\658;IT`ds}\u008a\u0098\u00a8\u00bf\u00ce\u00d6\u00de\u00ea\u00f7"+
+		"\u00fb";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

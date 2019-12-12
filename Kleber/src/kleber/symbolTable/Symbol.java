@@ -5,9 +5,9 @@ public class Symbol {
     private String nome;
     private String tipo;
     private String valor;
-    private boolean escopo;
+    private String escopo;
 
-    public Symbol(Integer id, String nome, String tipo, String valor, boolean escopo) {
+    public Symbol(Integer id, String nome, String tipo, String valor, String escopo) {
         this.id = id;
         this.nome = nome;
         this.tipo = tipo;
@@ -47,11 +47,11 @@ public class Symbol {
         this.valor = valor;
     }
 
-    public boolean isEscopo() {
+    public String getEscopo() {
         return escopo;
     }
 
-    public void setEscopo(boolean escopo) {
+    public void setEscopo(String escopo) {
         this.escopo = escopo;
     }
 

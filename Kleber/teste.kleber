@@ -1,31 +1,55 @@
 #include "teste.will"
 
 global{
-int x,y;
-float z;
+string nome;
+char t;
+int n;
 }
 
 functions{
-int teste (int x, int y){
-x = x + y;
-return x;
+int somar(){
+int a;
+int b;
 };
 
-float teste2 (float z){
-return z * 2;
-};
+float divisao(){
+float c;
+float d;
 
+};
 }
 
 main{
+t = '1';
+nome = "Teste";
+n = 10;
 
-printf("Digite um valor:");
-scanf("%d", &x);
-printf("Digite outro valor:");
-scanf("%d", &y);
+int pedro;
 
-z = x + y;
+for(pedro = 20; pedro > 10; pedro -= 1){
+printf("pedro: ");
+printf(pedro);
+};
 
-printf("Resultado da soma dos dois valores: %d", z);
+
+printf("");
+if(n == pedro){
+printf(n);
+printf(" = ");
+printf(pedro);
+}
+else{
+printf(n);
+printf(" != ");
+printf(pedro);
+};
+
+int input;
+
+
+
+printf("Digite a sua entrada: ");
+scanf(input);
+printf(input);
 
 }
